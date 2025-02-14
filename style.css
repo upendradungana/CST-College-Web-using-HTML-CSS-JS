@@ -214,3 +214,8 @@ a{
     height: auto;
 }
 
+#footer-Links:hover{
+    font-weight: 900;
+    font-size: 1.6rem;
+    color: rgb(225, 182, 118);
+}

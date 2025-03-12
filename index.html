@@ -3,100 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <title>cst website</title>
+    <title>College of Science and Technology</title>
+
 </head>
-<body class="mainBody">
-    <div class="nevDiv">
-        <button class="btn">
-            <i class="fa fa-bars iconBar"></i>
-        </button>
-        <div id="logo">
-            <img id="img" src="./logo.jpg" alt="cst logo">
-        </div>
-        <div class="nevLinks">Home</div>
-        <div class="nevLinks">About Us</div>
-        <div class="nevLinks">Admisson</div>
-        <div class="nevLinks">Academic</div>
-        <div class="nevLinks">Research</div>
-        <div class="nevLinks">Services</div>
-        <div class="nevLinks">Other</div>
-        <div class="nevLinks">Q&A</div>
-    </div>
-    <div class="mainImage">
-        <img id="collegeImg" src="./collegeImg.png" alt="college image">
-    </div>
-    <p id="mainMsg"><i>In pursuit of preparing tomorrow's technologist.</i></p>
+<body class="bg-[#7AB5C9]">
 
-    <div class="YT-Video">
-        <a href="https://youtu.be/fc09mcvQlQ0">
-        <div class = "video">
-            <img id="link-1" i src="./yt-link-1.png" alt="video">
-        </div>
+    <!-- Navigation Bar -->
+<div class="flex flex-wrap justify-between items-center bg-[#24A2C8] h-[80px] px-4 md:px-10">
+    <!-- Hamburger Button -->
+    <button id="menu-btn" class="bg-[#24A2C8] hover:bg-[#055C6D] w-[50px] h-[50px] md:w-[70px] md:h-[70px] flex items-center justify-center rounded-full transition md:hidden">
+        <i class="fa fa-bars text-white text-xl md:text-2xl"></i>
+    </button>
+
+    <div class="w-[50px] h-[50px] md:w-[70px] md:h-[70px]">
+        <img src="./logo.jpg" alt="CST Logo" class="w-full h-full rounded-full">
+    </div>
+
+    <!-- Navigation Links (Initially Hidden on Small Screens) -->
+    <div id="nav-menu" class="hidden flex-col md:flex md:flex-row space-y-4 md:space-y-0 md:space-x-4 text-white text-lg absolute md:relative top-[80px] md:top-0 left-0 w-full md:w-auto bg-[#24A2C8] md:bg-transparent p-4 md:p-0">
+        <div class="hover:bg-[#055C6D] p-3 rounded-full cursor-pointer transition">Home</div>
+        <a href="about.html"><div href="about.html" class="hover:bg-[#055C6D] p-3 rounded-full cursor-pointer transition">About Us</div>
+        </a>
+        <a href="admission.html"><div  class="hover:bg-[#055C6D] p-3 rounded-full cursor-pointer transition">Admission</div>
+        </a>
+        <a href="academic.html"><div class="hover:bg-[#055C6D] p-3 rounded-full cursor-pointer transition">Academic</div></a>
+        <a href="research.html"><div class="hover:bg-[#055C6D] p-3 rounded-full cursor-pointer transition">Research</div>
     </a>
-       
+    </div>
+</div>
+
+
+    <!-- Main Image -->
+    <div class="w-full h-[300px] md:h-[500px]">
+        <img src="./collegeImg.png" alt="College Image" class="w-full h-full object-cover">
     </div>
 
-    <div class="Pgm-info">
-        <p id="pgm-title">Programmes</p>
-        <p id="pgm-text-info">The College currently offers Master of Engineering in Renewable Energy, Masters in Construction Management and four-year
-             undergraduate engineering programme in Civil, Electrical, Electronics & Communication, Information Technology, Engineering Geology,
-              Instrumentation & Control Engineering, and a five-year programme in Architecture. Additionally, the College offers capacity-building
-               programs for the in-service personnel holding Diploma in Civil, Electrical, Electronics & Communication and Information Technology.
-                These programmes take into account prior learning and thereby the duration of the programme is reduced by a year. The programmes are
-                 managed through five academic departments in the College, Civil Engineering Department, Electrical Engineering Department, Electronics & 
-                 Communication Department, Information Technology Department, Science and Humanities Department and Architecture Department.
+    <p class="text-center text-xl md:text-2xl text-[#236C79] italic font-semibold mt-4">
+        In pursuit of preparing tomorrow's technologists.
+    </p>
 
-            All the academic programmes offered by the College are validated and adopted by the Royal University of Bhutan (RUB) and National Accreditation Council of Bhutan.</p>
+    <!-- YouTube Video Section -->
+    <div class="bg-white p-6 w-[90%] max-w-[500px] mx-auto my-10 rounded-2xl flex justify-center shadow-md">
+        <a href="https://youtu.be/fc09mcvQlQ0">
+            <img src="./yt-link-1.png" alt="Video" class="rounded-2xl w-full">
+        </a>
     </div>
 
-    <div class="CoursesSection">
-      
-            <div class="Courses">
-                <img class="Cources-img" src="./M.E. in Renewable Energy Image.jpeg" alt="M.E. in Renewable Energy Image">M.E. in Renewable Energy</div>
-
-
-                <div class="Courses"><img class="Cources-img" src="./Masters in Construction Management.png" alt="Masters in Construction Management Image">Masters in Construction Management</div>
-        
-        
-                <div class="Courses"><img class="Cources-img" src="./B.E. in Electrical Engineering.png" alt="B.E. in Electrical Engineering Image">B.E. in Electrical Engineering</div>
-            
-                
-                <div class="Courses"><img class="Cources-img" src="./B.E. in Information Technology.png" alt="B.E. in Information Technology Image">B.E. in Information Technology</div>
-            
-
-                <div class="Courses"><img class="Cources-img" src="./B.E. in Engineering Geology.png" alt="B.E. in Engineering Geology Image">B.E. in Engineering Geology</div>
-            
-
-                <div class="Courses"><img class="Cources-img" src="./B.E. in Electronics & Communication Engineering.png" alt="B.E. in Electronics & Communication Engineering Image">B.E. in Electronics & Communication Engineering</div>
-            
-
-                <div class="Courses"><img class="Cources-img" src="./B.E. Instrumentation & Control Engineering.png" alt="B.E. Instrumentation & Control Engineering Image">B.E. Instrumentation & Control Engineering</div>
-        
-
-                <div class="Courses"><img class="Cources-img" src="./Bachelor of Architecture.png" alt="Bachelor of Architecture Image">Bachelor of Architecture</div>
-            
-
-                <div class="Courses"><img class="Cources-img" src="./B.E. in Civil Engineering.png" alt="B.E. in Civil Engineering Image">B.E. in Civil Engineering</div>
-        
-
-                <div class="Courses"><img class="Cources-img" src="./B.E in Software Engineering.png" alt="B.E in Software Engineering Image">B.E in Software Engineering</div>
-
+    <!-- Program Information -->
+    <div class="bg-green-500 w-[90%] max-w-[800px] mx-auto p-6 rounded-lg my-10 text-center shadow-md">
+        <p class="text-2xl font-bold text-white">Programmes</p>
+        <p class="text-lg text-white mt-3">
+            The College currently offers undergraduate and postgraduate programs in various engineering disciplines, managed through multiple academic departments.
+        </p>
     </div>
 
-    <!-- footer -->
-    <div class="footer">
+    <!-- Courses Section -->
+    <div class="bg-[#6EADC1] w-[90%] mx-auto p-6 rounded-lg my-10 shadow-md">
+        <p class="text-2xl font-bold text-white text-center mb-6">Available Courses</p>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Course Item -->
+            <div class="bg-[#055C6D] p-4 rounded-lg text-white text-center hover:scale-105 transition">
+                <img src="./M.E. in Renewable Energy Image.jpeg" alt="Course Image" class="rounded-lg w-full h-[150px] object-cover">
+                <p class="mt-2 font-semibold">M.E. in Renewable Energy</p>
+            </div>
+            
+            <div class="bg-[#055C6D] p-4 rounded-lg text-white text-center hover:scale-105 transition">
+                <img src="./Masters in Construction Management.png" alt="Course Image" class="rounded-lg w-full h-[150px] object-cover">
+                <p class="mt-2 font-semibold">Masters in Construction Management</p>
+            </div>
 
-        <p id="copyright">&#64Copyright 2023, College of Science and Technology, Royal University of Bhutan</p>
+            <div class="bg-[#055C6D] p-4 rounded-lg text-white text-center hover:scale-105 transition">
+                <img src="./B.E. in Electrical Engineering.png" alt="Course Image" class="rounded-lg w-full h-[150px] object-cover">
+                <p class="mt-2 font-semibold">B.E. in Electrical Engineering</p>
+            </div>
 
-       <div id="footer-links"> <a href="CST@gmail.com"> Mail Us </a></div>
-        <div id="footer-links"> <a href="CSTfacebook">Facebook-Page </a></div>
-        <div id="footer-links"><a href="privacy&Policies"> Privacy </a></div>
-        <div id="footer-links"> <a href="home">Home</a></div>
+            <div class="bg-[#055C6D] p-4 rounded-lg text-white text-center hover:scale-105 transition">
+                <img src="./B.E. in Information Technology.png" alt="Course Image" class="rounded-lg w-full h-[150px] object-cover">
+                <p class="mt-2 font-semibold">B.E. in Information Technology</p>
+            </div>
+
+            <div class="bg-[#055C6D] p-4 rounded-lg text-white text-center hover:scale-105 transition">
+                <img src="./B.E. in Engineering Geology.png" alt="Course Image" class="rounded-lg w-full h-[150px] object-cover">
+                <p class="mt-2 font-semibold">B.E. in Engineering Geology</p>
+            </div>
+
+            <div class="bg-[#055C6D] p-4 rounded-lg text-white text-center hover:scale-105 transition">
+                <img src="./B.E. in Civil Engineering.png" alt="Course Image" class="rounded-lg w-full h-[150px] object-cover">
+                <p class="mt-2 font-semibold">B.E. in Civil Engineering</p>
+            </div>
+
+            <div class="bg-[#055C6D] p-4 rounded-lg text-white text-center hover:scale-105 transition">
+                <img src="./B.E. in Electronics & Communication Engineering.png" alt="Course Image" class="rounded-lg w-full h-[150px] object-cover">
+                <p class="mt-2 font-semibold">B.E. in Electronics & Communication Engineerin</p>
+            </div>
+
+            <div class="bg-[#055C6D] p-4 rounded-lg text-white text-center hover:scale-105 transition">
+                <img src="./B.E. Instrumentation & Control Engineering.png" alt="Course Image" class="rounded-lg w-full h-[150px] object-cover">
+                <p class="mt-2 font-semibold">B.E. Instrumentation & Control Engineering</p>
+            </div>
+
+            <div class="bg-[#055C6D] p-4 rounded-lg text-white text-center hover:scale-105 transition">
+                <img src="./Bachelor of Architecture.png" alt="Course Image" class="rounded-lg w-full h-[150px] object-cover">
+                <p class="mt-2 font-semibold">Bachelor of Architecture</p>
+            </div>
+        </div>
     </div>
 
+    <!-- Footer -->
+    <div class="bg-[#21383A] text-white p-6 text-center mt-10">
+        <p class="text-sm md:text-base">&#64; 2025, College of Science and Technology, Royal University of Bhutan</p>
+        <div class="flex flex-wrap justify-center gap-4 mt-4">
+            <a href="CST@gmail.com" class="bg-[#10384C] px-4 py-2 rounded-lg hover:underline">Mail Us</a>
+            <a href="CSTfacebook" class="bg-[#10384C] px-4 py-2 rounded-lg hover:underline">Facebook Page</a>
+            <a href="privacy&Policies" class="bg-[#10384C] px-4 py-2 rounded-lg hover:underline">Privacy</a>
+            <a href="home" class="bg-[#10384C] px-4 py-2 rounded-lg hover:underline">Home</a>
+        </div>
+    </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
